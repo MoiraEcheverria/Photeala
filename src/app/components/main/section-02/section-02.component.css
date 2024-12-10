@@ -1,0 +1,177 @@
+.section_02 {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+  min-height: 620px;
+  display: flex;
+  padding: 100px 16px 50px;
+}
+
+.section-container {
+  min-width: 330px;
+  padding: 8px 16px;
+}
+
+.section_02 h1 {
+  color: var(--orange);
+  margin: 0;
+}
+
+
+.btn-white:hover img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(118deg) brightness(111%) contrast(102%);
+}
+
+
+/* Mobile Only */
+.mobile-only {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-frame-mobile {
+  width: 100%;
+  height: 100%;
+  max-width: 360px;
+  max-height: 200px;
+}
+
+.mobile-only .video-frame-mobile iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.mobile-only iframe {
+  max-width: 360px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-only .mobile-section-buttons {
+  max-width: 100%;
+}
+
+.desktop-only .desktop-video-container,
+.desktop-only .desktop-section-text {
+  display: none;
+}
+
+
+@media (width > 768px) {
+
+  .section_02 {
+    padding: 16px;
+  }
+
+  .section-container {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    min-width: 330px;
+    padding: 8px 16px;
+    max-width: 100%;
+  }
+
+  /* Desktop Only */
+  .desktop-only .desktop-video-container,
+  .desktop-only .desktop-section-text {
+    display: inline-block;
+  }
+
+  .desktop-only {
+    width: 100%;
+    height: auto;
+  }
+
+  .desktop-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    width: 573px;
+    height: 705px;
+  }
+
+  .desktop-section-text {
+    max-width: 449px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  /* Elements Video Section */
+  .popover {
+    width: 56%px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+  }
+
+  .lines {
+    width: 93%;
+    position: absolute;
+    left: 3.5%;
+    top: 12.5%;
+    z-index: 5;
+
+  }
+
+  .ellipse {
+    width: 85%;
+    position: absolute;
+    left: 7.5%;
+    top: 15%;
+    z-index: 5;
+
+  }
+
+  .frame {
+    width: 48%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+
+  }
+
+  .video-frame {
+    width: 88%;
+    height: 40%;
+    border-radius: 20px;
+    position: absolute;
+    left: 6%;
+    top: 30%;
+    z-index: 15;
+  }
+
+  .video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  /* Mobile Only */
+  .mobile-only .mobile-section-text,
+  .mobile-only .video-frame-mobile,
+  .mobile-only .mobile-section-buttons button {
+    display: none;
+  }
+
+}
+
+@media (width >=1199px) {
+  .section_02 {
+    width: var(--max-main);
+  }
+}

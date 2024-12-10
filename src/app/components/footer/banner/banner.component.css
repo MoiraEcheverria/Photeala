@@ -1,0 +1,87 @@
+.banner {
+  width: 100vw;
+  min-height: 200px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.banner-container {
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+
+
+.navigation_links {
+  font-size: 16px;
+}
+
+.navigation_links a {
+  padding: 0 8px;
+}
+
+a {
+  color: var(--white);
+}
+
+.photaela_logotipo {
+  width: 150px;
+  height: auto;
+}
+
+
+/* Íconos alineados horizontalmente */
+.rights-icons {
+  white-space: nowrap;
+}
+
+.rights-icons a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Ocultar enlaces mobile */
+.mobile-only a {
+  display: inline-block;
+}
+
+/* Mostrar enlaces desktop */
+.desktop-only a {
+  display: none;
+}
+
+@media (width < 1200px) {
+  .banner {
+    height: auto;
+  }
+}
+
+@media (width > 768px) {
+  .banner {
+    border-radius: 0px;
+  }
+
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Ocultar enlaces mobile */
+  .mobile-only a {
+    display: none;
+  }
+
+  /* Mostrar enlaces desktop */
+  .desktop-only a {
+    display: inline-block;
+  }
+
+}

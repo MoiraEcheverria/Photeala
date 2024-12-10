@@ -1,0 +1,160 @@
+/* Header */
+.header-container {
+  height: 56px;
+  width: 100vw;
+  padding: 0px 24px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+/* Navbar */
+.navbar-content {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Logo */
+.photeala_logotipo {
+  max-height: 40px;
+}
+
+/* Navbar */
+.navbar {
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+/* Links */
+.links {
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all ease 100ms;
+  padding: 8px 16px;
+}
+
+.links:hover {
+  color: var(--orange);
+}
+
+/* Botón "Crea tu cuenta" */
+.btn-account {
+  background-color: var(--orange-500);
+  border: 1px solid var(--orange);
+  color: var(--white);
+  transition: all ease 100ms;
+}
+
+.btn-account:hover {
+  background-color: var(--orange);
+}
+
+/* Responsive: Mobile */
+@media (width < 767px) {
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-account {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Alinea el toggle con el logo */
+  .navbar-toggler {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* Se saca el menú desplegable del flujo */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Menú desplegado */
+  .navbar-collapse.show {
+    background-color: var(--orange-500);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
+    ;
+  }
+
+  .navbar-collapse.show li a {
+    color: var(--white);
+  }
+
+  .navbar-collapse.show .nav-menu {
+    padding: 1rem 0.5rem;
+  }
+
+  /* Ocultar enlaces desktop por defecto */
+  .desktop-only a {
+    display: none;
+  }
+
+  /* Oculta enlaces desktop */
+  .desktop-only a,
+  .desktop-only li img {
+    display: none;
+  }
+
+  /* Muestra enlaces mobile */
+  .mobile-only a button,
+  .mobile-only li img {
+    display: inline-block;
+  }
+}
+
+/*  Tablet-Desktop */
+@media (width > 768px) {
+  .header-container {
+    padding: 0 70px;
+  }
+
+  /* Oculta enlaces mobile */
+  .mobile-only a,
+  .mobile-only .img {
+    display: none;
+  }
+
+  /* Muestra enlaces desktop */
+  .desktop-only a,
+  .desktop-only li img {
+    display: inline-block;
+  }
+}

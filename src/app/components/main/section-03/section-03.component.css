@@ -1,0 +1,21 @@
+.section_03 {
+  color: var(--white);
+  height: 269px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-container {
+  background-color: var(--orange-500);
+  width: 100%;
+  max-width: 1280px;
+  text-align: center;
+  height: 269px;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.section_03 h1 {
+  padding: 3rem;
+  letter-spacing: 1.5px;
+}

@@ -1,0 +1,47 @@
+.section_01 {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  /* Espaciado general */
+}
+
+.section_01 h1 {
+  color: var(--orange);
+}
+
+.text-container {
+  margin-bottom: 20px;
+  padding-top: 48px;
+  gap: 12px;
+  max-width: 350px;
+}
+
+.mobile-only {
+  display: inline-block;
+}
+
+.text-container,
+.animation-container {
+  min-height: 300px;
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 768px) {
+
+  .text-container,
+  .animation-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .animation-container {
+    min-height: auto;
+    margin-bottom: 0;
+  }
+}

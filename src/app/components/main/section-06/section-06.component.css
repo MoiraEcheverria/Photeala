@@ -1,0 +1,163 @@
+.section_06 {
+  color: var(--gray);
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 1280px;
+  padding-top: 48px;
+  margin: 0 auto;
+}
+
+.section-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header {
+  width: 100%;
+  text-align: center;
+  max-width: 992px;
+  max-height: 68px;
+  border-radius: 16px 16px 0 0;
+  padding: 10px;
+  background-color: var(--gray-200);
+}
+
+/* Contenedor de las Card */
+.cards-container {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  background-color: var(--gray-200);
+  padding: 1rem;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cada Card */
+.card {
+  flex: 0 0 auto;
+  width: 318px;
+  height: 556px;
+  border-radius: 20px;
+  border: none;
+  padding: 24px 16px;
+  color: var(--gray);
+  box-shadow: var(--shadow);
+}
+
+.card:not(.selected) {
+  background-color: var(--gray-100);
+}
+
+/* Card Seleccionada 'Menos ancha con borde hacia afuera! */
+.card.card-selected {
+  width: 279px;
+  background-color: var(--white);
+  outline: 7px solid var(--orange-300);
+  outline-offset: 0px;
+  box-shadow: rgba(0, 0, 0, .15) 0px 2px 4px 8px;
+  ;
+}
+
+/* Títulos (Básico - Pro - Premium) */
+.header-card h4 {
+  margin: 0;
+  height: 29px;
+}
+
+.type-select {
+  height: 86px;
+}
+
+.type-select .type {
+  display: flex;
+  color: var(--gray-900);
+  height: 32px;
+}
+
+.form-select {
+  height: 38px;
+  width: 100%;
+}
+
+option {
+  color: #6C757D;
+}
+
+.prices {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-weight: 32px;
+  letter-spacing: -1px;
+}
+
+.prices span {
+  font-weight: 400;
+}
+
+.mes {
+  font-size: 14px;
+  margin: 0;
+}
+
+.anual {
+  font-size: 14px;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.button-container {
+  height: 85px;
+  padding-bottom: 16px;
+}
+
+.btn-span {
+  color: var(--gray-600);
+  font-size: 14px;
+}
+
+.details {
+  height: 240px;
+}
+
+.details ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.details ul li {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width > 768px) {
+
+  .cards-container {
+    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+  }
+}
+
+@media (width > 1199px) {
+  .cards-container {
+    justify-content: center;
+    overflow-x: hidden;
+    border-radius: 20px 20px 0px 0px;
+  }
+}

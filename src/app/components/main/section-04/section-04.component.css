@@ -1,0 +1,66 @@
+.section_04 {
+  color: var(--gray);
+  background-color: var(--white);
+  margin: 24px 0;
+  padding: 16px 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.subsection {
+  padding-top: 48px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.text-container {
+  padding: 16px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-header {
+  width: 100%;
+}
+
+.paragraph {
+  height: 116px;
+}
+
+@media (min-width: 768px) {
+
+  .section_04 {
+    padding: 0;
+  }
+
+  /* Primer hijo (primera imagen dentro de .section_04) */
+  .image1 {
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  /* Segundo hijo (segunda imagen dentro de .section_04) */
+  .image2 {
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  /* Tercer hijo (tercera imagen dentro de .section_04) */
+  .image3 {
+    border-radius: 0 20px 20px 0;
+  }
+
+
+  .subsection {
+    padding-top: 0;
+  }
+
+  .text-container {
+    max-width: 410px;
+  }
+
+}
